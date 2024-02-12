@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="animation.js"></script>
+    <title>About Imagine Dragons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand offset-md-2" href="#">Imagine Dragons Tribute</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-md-6">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página About -->
+    <div class="container">
+
+        <!-- Título -->
+        <div class=" p-5 has-animation animation-ltr" data-delay="10" id="banner">
+            <img src="img/about.png" class="img-fluid" alt="logo">
+        </div>
+
+        <br>
+        <div class="container has-animation animation-rtl" data-delay="1000" id="miembros">
+            <div class="row">
+                <!-- Miembro 1 -->
+                <div class="col-lg-3 col-md-6 col-12 mb-4" id="animation">
+                    <div class="card">
+                        <img src="img/dan.jpg" class="card-img-top" alt="Foto Miembro 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dan Reynolds</h5>
+                            <p class="card-text">Vocalista principal y fundador de Imagine Dragons. Nacido el 14 de
+                                julio de
+                                1987.</p>
+                            <!-- Botón para desplegar detalles utilizando el componente Accordion de Bootstrap -->
+                            <a data-toggle="collapse" href="#detallesMiembro1" class="btn btn-info" role="button"
+                                aria-expanded="false" aria-controls="detallesMiembro1">
+                                Ver Detalles
+                            </a>
+                            <!-- Detalles del miembro dentro del Accordion -->
+                            <div class="collapse" id="detallesMiembro1">
+                                <div class="card card-body">
+                                    <!-- Información detallada del miembro -->
+                                    <p>Dan Reynolds es el vocalista principal y fundador de Imagine Dragons. Además de
+                                        su
+                                        carrera musical, está involucrado en varias iniciativas benéficas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 2 -->
+                <div class="col-lg-3 col-md-6 col-12 mb-4" id="animation">
+                    <div class="card">
+                        <img src="img/wayne.jpg" class="card-img-top" alt="Foto Miembro 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Wayne Sermon</h5>
+                            <p class="card-text">Guitarrista y cofundador de Imagine Dragons. Nacido el 15 de junio de
+                                1984.</p>
+                            <!-- Botón para desplegar detalles utilizando el componente Accordion de Bootstrap -->
+                            <a data-toggle="collapse" href="#detallesMiembro2" class="btn btn-info" role="button"
+                                aria-expanded="false" aria-controls="detallesMiembro2">
+                                Ver Detalles
+                            </a>
+                            <!-- Detalles del miembro dentro del Accordion -->
+                            <div class="collapse" id="detallesMiembro2">
+                                <div class="card card-body">
+                                    <!-- Información detallada del miembro -->
+                                    <p>Wayne Sermon es el guitarrista y cofundador de Imagine Dragons. Contribuye
+                                        significativamente al sonido distintivo de la banda con su estilo de guitarra
+                                        único.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 3 -->
+                <div class="col-lg-3 col-md-6 col-12 mb-4" id="animation">
+                    <div class="card">
+                        <img src="img/ben.jpg" class="card-img-top" alt="Foto Miembro 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ben McKee</h5>
+                            <p class="card-text">Bajista y miembro fundador de Imagine Dragons. Nacido el 7 de abril de
+                                1985.</p>
+                            <!-- Botón para desplegar detalles utilizando el componente Accordion de Bootstrap -->
+                            <a data-toggle="collapse" href="#detallesMiembro3" class="btn btn-info" role="button"
+                                aria-expanded="false" aria-controls="detallesMiembro3">
+                                Ver Detalles
+                            </a>
+                            <!-- Detalles del miembro dentro del Accordion -->
+                            <div class="collapse" id="detallesMiembro3">
+                                <div class="card card-body">
+                                    <!-- Información detallada del miembro -->
+                                    <p>Ben McKee es el bajista y miembro fundador de Imagine Dragons. Aparte de la
+                                        música, tiene
+                                        intereses en la producción musical y la filantropía.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 4 -->
+                <div class="col-lg-3 col-md-6 col-12 mb-4" id="animation">
+                    <div class="card">
+                        <img src="img/daniel.jpg" class="card-img-top" alt="Foto Miembro 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Daniel Platzman</h5>
+                            <p class="card-text">Baterista y miembro fundador de Imagine Dragons. Nacido el 28 de
+                                septiembre de
+                                1986.</p>
+                            <!-- Botón para desplegar detalles utilizando el componente Accordion de Bootstrap -->
+                            <a data-toggle="collapse" href="#detallesMiembro4" class="btn btn-info" role="button"
+                                aria-expanded="false" aria-controls="detallesMiembro4">
+                                Ver Detalles
+                            </a>
+                            <!-- Detalles del miembro dentro del Accordion -->
+                            <div class="collapse" id="detallesMiembro4">
+                                <div class="card card-body">
+                                    <!-- Información detallada del miembro -->
+                                    <p>Daniel Platzman es el baterista y miembro fundador de Imagine Dragons. Además de
+                                        su
+                                        talento musical, tiene interés en la fotografía y la producción musical.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite este bloque para más miembros -->
+            </div>
+        </div>
+
+        <div class="has-animation animation-ltr" data-delay="2000">
+            <div class="col-10 info contenedor-flotante">
+                <div class="subtitulo">Historia de Imagine Dragons</div>
+                <div class="parrafo">
+                    <p>Imagine Dragons es una banda de pop rock y rock alternativo originaria de Las Vegas, Nevada. La
+                        banda
+                        se formó en 2008 y rápidamente ganó reconocimiento por su energético estilo musical y sus
+                        potentes
+                        actuaciones en vivo.</p>
+                    <p>El vocalista principal, Dan Reynolds, fundó la banda junto con el guitarrista Wayne Sermon, el
+                        bajista
+                        Ben McKee y el baterista Daniel Platzman. Juntos, han creado un sonido distintivo que combina
+                        elementos de rock, pop, y música electrónica.</p>
+                    <p>Imagine Dragons alcanzó la fama mundial con el lanzamiento de su álbum debut "Night Visions" en
+                        2012,
+                        que incluye éxitos como "Radioactive" y "Demons". Desde entonces, la banda ha continuado
+                        lanzando
+                        álbumes exitosos y ha dejado una marca duradera en la escena musical internacional.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Peu de Pàgina -->
+    <footer class="footer static-bottom bg-dark">
+        <div class="container">
+            <p>Derechos de autor © 2024 Imagine Dragons Tribute</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap (Asegúrate de incluir jQuery y Popper.js antes de Bootstrap.js) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

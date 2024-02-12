@@ -1,0 +1,178 @@
+@charset "UTF-8";
+body {
+  background-color: #343a40;
+  /* Cambia este valor al color que desees */ }
+
+.title {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 20px;
+  color: black; }
+
+.info {
+  color: #d7cfcf;
+  background-color: #303235; }
+
+.carousel-inner {
+  height: 0;
+  padding-bottom: 70%; }
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+#container {
+  height: 65%; }
+
+.carousel-inner {
+  height: 0;
+  padding-bottom: 50%;
+  /* this sets carousel aspect ratio (4:1 here) */ }
+
+.carousel-item {
+  position: absolute !important;
+  /* Bootstrap is insistent */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.carousel-item img {
+  height: 100%;
+  /* Bootstrap handles width already */
+  object-fit: cover;
+  /* or 'contain' if you want stretch instead of crop */ }
+
+#banner {
+  /* Ajusta la altura según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.footer {
+  color: #ffffff;
+  /* Color del texto */
+  padding: 10px 0;
+  /* Espaciado interior */
+  text-align: center;
+  /* Alineación del texto */
+  margin-top: 30px; }
+
+.contenedor-flotante {
+  border: 1px solid #8f39a7;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */ }
+
+.subtitulo {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.parrafo {
+  font-size: 14px;
+  line-height: 1.5; }
+
+#music {
+  margin-top: 10px; }
+
+audio {
+  width: 200px; }
+
+#animation:after {
+  position: absolute;
+  content: "";
+  top: 5vw;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.75);
+  -webkit-filter: blur(5vw);
+  -moz-filter: blur(5vw);
+  -ms-filter: blur(5vw);
+  filter: blur(5vw);
+  background: linear-gradient(270deg, #0fffc1, #7e0fff);
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite; }
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes textColor {
+  0% {
+    color: #7e0fff; }
+  50% {
+    color: #0fffc1; }
+  100% {
+    color: #7e0fff; } }
+.has-animation {
+  position: relative; }
+  .has-animation p,
+  .has-animation img,
+  .has-animation .card, .has-animation .info {
+    opacity: 0; }
+  .has-animation.animate-in p,
+  .has-animation.animate-in img,
+  .has-animation.animate-in .card, .has-animation.animate-in .info {
+    animation: textHidden 0.1s 1.1s forwards; }
+  .has-animation.animate-in:before, .has-animation.animate-in:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 10; }
+  .has-animation.animate-in:before {
+    background-color: #0fe4d2; }
+  .has-animation.animate-in:after {
+    background-color: #202020;
+    animation-delay: .5s; }
+  .has-animation.animation-ltr.animate-in:before {
+    animation: revealLTR 1.8s ease; }
+  .has-animation.animation-ltr.animate-in:after {
+    animation: revealLTR 1s .6s ease; }
+  .has-animation.animation-rtl.animate-in:before {
+    animation: revealRTL 1.8s ease; }
+  .has-animation.animation-rtl.animate-in:after {
+    animation: revealRTL 1s .6s ease; }
+
+@keyframes revealRTL {
+  0% {
+    width: 0;
+    right: 0; }
+  65% {
+    width: 100%;
+    right: 0; }
+  100% {
+    width: 0;
+    right: 100%; } }
+@keyframes revealLTR {
+  0% {
+    width: 0;
+    left: 0; }
+  65% {
+    width: 100%;
+    left: 0; }
+  100% {
+    width: 0;
+    left: 100%; } }
+@keyframes textHidden {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
