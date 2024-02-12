@@ -4,7 +4,6 @@ $black: #202020;
 
 body {
   background-color: #343a40;
-  /* Cambia este valor al color que desees */
 }
 
 .title {
@@ -40,7 +39,6 @@ body {
 .carousel-inner {
   height: 0;
   padding-bottom: 50%;
-  /* this sets carousel aspect ratio (4:1 here) */
 }
 
 .carousel-item {
@@ -54,13 +52,10 @@ body {
 
 .carousel-item img {
   height: 100%;
-  /* Bootstrap handles width already */
   object-fit: cover;
-  /* or 'contain' if you want stretch instead of crop */
 }
 
 #banner {
-  /* Ajusta la altura según tus necesidades */
   display: flex;
   flex-direction: column;
   justify-content: center;
